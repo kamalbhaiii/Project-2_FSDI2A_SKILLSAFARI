@@ -187,3 +187,8 @@ span {
   text-decoration: none;
   cursor: pointer;
 }
+
+.modal-content .rulesImg{
+  display:flex;
+  justify-content:center;
+}
