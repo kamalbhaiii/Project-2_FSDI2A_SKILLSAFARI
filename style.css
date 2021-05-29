@@ -137,17 +137,22 @@ span {
 }
 
 
-.modalBtn{
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+#modalBtn{
+  overflow: auto; 
+  background-color: #c2eaba;
+  background-image: linear-gradient(319deg, #c2eaba 0%, #c5f4e0 37%, #efc2cf 100%);
+  cursor: pointer;
+  padding:10px;
+  border-radius:50%;
+}
+
+#modalBtn:hover{
+  overflow: auto; 
+  background-color: #c2eaba;
+  background-image: linear-gradient(319deg, #c2eaba 15%, #c5f4e0 32%, #efc2cf 92%);
+  cursor: pointer;
+  padding:10px;
+  border-radius:50%;
 }
 
 .modal {

@@ -51,7 +51,8 @@ let gameRules = {
   }
 };
 
-
+let user_name = prompt("Enter your name")
+document.getElementById('user_name').innerHTML = `${user_name}`;
 
 function clicked(input) {
   let choices = ['Rock', 'Paper', 'Scissors', 'Lizard', 'Spock'];
@@ -59,24 +60,24 @@ function clicked(input) {
   let computer_choice = choices[randomNumber];
   document.getElementById(
     'user_choice'
-  ).innerHTML = `Computer choose <span>${computer_choice.toUpperCase()}</span>`;
+  ).innerHTML = `I choose <span>${computer_choice.toUpperCase()}</span>`;
   document.getElementById(
     'computer_choice'
-  ).innerHTML = `You Choose <span>${input.toUpperCase()}</span>`;
+  ).innerHTML = `${user_name}, Choose <span>${input.toUpperCase()}</span>`;
 
   switch (gameRules[input][computer_choice]) {
     case 'win':
-      result.innerText = 'You win';
+      result.innerText = `${user_name} win`;
       result.style.cssText = 'background-color: green';
       user_score++;
       break;
     case 'lose':
-      result.innerText = 'You lose';
+      result.innerText = `${user_name} lose`;
       result.style.cssText = 'background-color: red';
       computer_score++; //
       break;
     case 'draw':
-      result.innerText = 'You draw';
+      result.innerText = `Match draw.`;
       result.style.cssText = 'background-color:grey'
       break;
   }
